@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms in html</title>
+    <style > body{
+         background-color: aqua;
+    }
+    /* .img{
+        align-items: center;
+        display: inline-block;
+        place-items: center;
+        top: 50;
+        right: 50;
+        max-width: 100;
+        height: auto;
+        
+    } */
+
+    </style>
+</head>
+<body>
+    
+    <form>
+    <center><h2> JOB APPLICATION </h2> </center>
+    <div class="img">
+
+        <img src="./assets12/10k.png" usemap="#workmap" height="100" width="200" alt="my img" style="display: block; margin:auto;" >
+    </div>
+    <hr/>
+    <h4> PERSONAL INFORMATION </h4>
+    <fieldset>
+    <legend> personalia:</legend>
+    <label for="_fname">First name: </label>
+    <input type="text" id="fname" name="fname"/>
+     &nbsp;&nbsp; 
+     &nbsp;<label for="_sname"> Second name:</label>
+     <input type="text" id="sname" name="sname"/>
+     
+    <br/>
+    <br/>
+    <label for="pawd"> Passward:</label>&nbsp;
+    <input type="password" id="pawd">  <label for="ph"> &nbsp;&nbsp;  &nbsp;Mobile number:</label>
+    
+    <input type="number" id="ph" name="phone" pattern="[00-9{10}]">
+    <br/>
+    <br/> 
+   &nbsp; &nbsp;<label for="mail"> Email: </label> &nbsp;
+   &nbsp; <input type="email" id="mail" name="mail"  pattern="[@]"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    &nbsp; <label for="dob" > DOB: </label>
+   &nbsp;&nbsp; <input type="date" id="date" name="dob"/>
+    <br/>
+    <br/>
+    
+    
+    <label for="gender"> Gender: </label>
+     
+    <input type="radio" id="gender" name="gender" value="male" gender value="male"> male
+    <input type="radio" id="gender" name="gender" value="female" gender value="female">female
+    <input type="radio" id="gender" name="gender" value="others" gender value="others">others
+
+ &nbsp; &nbsp; &nbsp; &nbsp;<label for="address"> Address :</label> <input type="text" id="address" name="address" />
+<br/>
+<br/>
+ <label for="street"> Street name: </label>
+<input type="text" id="street" name="street"/>
+
+
+<label for="city"> City :</label>
+<select name="city" id="city"  size="2"  multiple> 
+    <option value="city" > hyderabad </option>
+    <option value="city" > banglore</option>
+    <option value="city" > mumbai </option>
+    <option value="city" > chennai </option>
+    <option value="city"> Pune</option>
+
+</select>
+<br/> 
+<br/> &nbsp; <label for="zipcode"> Zipcode :</label>
+&nbsp;<input type="number" id="zipcode" name="zipcode" pattern="[00-9]">
+<h4>SKILLS</h4>
+<label for="SKILLS"> Python</label>
+<input type="checkbox" id="SKILLS" name="SKILLS">
+<label for="SKILLS"> Java</label>
+<input type="checkbox" id="SKILLS" name="SKILLS">
+<label for="SKILLS"> Html</label>
+<input type="checkbox" id="SKILLS" name="SKILLS">
+<label for="SKILLS"> Css </label>
+<input type="checkbox" id="SKILLS" name="SKILLS">
+<label for="SKILLS"> JS </label>
+<input type="checkbox" id="SKILLS" name="SKILLS">
+<label for="SKILLS"> Others</label>
+<input type="checkbox" id="SKILLS" name="SKILLS">
+
+<br/>
+<h5> EDUCATION</h5>
+<label  for="high school"></label>
+<input type="text" id="high school" name="high school"  placeholder="high school">
+<br/>
+<br/>
+<label for="university" ></label>
+<input  type="text" id="university" placeholder="university"/>
+<h5> EXPERIENCE </h5>
+<label for="experiance1"></label>
+<input type="text" id="experience1" placeholder=" experience1"/>
+<br/>
+<br/>
+<label for="experience2"></label>
+<input type="text" id="experience2" placeholder=" experience2"/>
+<br/>
+<br/>
+<label for="resume"> Upload resume</label>
+<input type="file" id="resume" name="resume>"
+
+<br/>
+<br/>
+<br/>
+
+<input type="submit" value="Register">
+</fieldset>
+</form>
+    
+    
+</body>
+</html>
